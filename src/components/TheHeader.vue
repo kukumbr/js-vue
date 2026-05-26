@@ -2,22 +2,23 @@
   <header class="site-header">
     <div class="header-container">
       
-      <!-- Навигационное меню -->
+      <!-- Навигационное меню с поддержкой переходов между страницами -->
       <nav class="header-nav">
-        <a href="#about">О нас</a>
-        <a href="#services">Услуги</a>
-        <a href="#rooms">Номера</a>
-        <a href="#booking">Бронь</a>
-        <a href="#faq">Вопросы</a>
+        <router-link :to="{ path: '/', hash: '#about' }">О нас</router-link>
+        <router-link :to="{ path: '/', hash: '#services' }">Услуги</router-link>
+        <router-link :to="{ path: '/', hash: '#rooms' }">Номера</router-link>
+        <router-link :to="{ path: '/', hash: '#booking' }">Бронь</router-link>
+        <router-link :to="{ path: '/', hash: '#faq' }">Вопросы</router-link>
       </nav>
       
-      <!-- Кнопка связи -->
-      <a href="#contacts" class="btn-header-contact">Связаться</a>
+      <!-- Кнопка связи, ведущая на форму бронирования на главной -->
+      <router-link :to="{ path: '/', hash: '#booking' }" class="btn-header-contact">Связаться</router-link>
       
     </div>
   </header>
 </template>
 
 <script setup>
-// Здесь пока пусто
+// Компонент переиспользует глобальный роутер, дополнительная логика тут не нужна
 </script>
+

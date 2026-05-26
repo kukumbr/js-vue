@@ -34,6 +34,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 90%;
 }
 
 .header-nav {
@@ -108,6 +109,7 @@ body {
 .about-section {
   max-width: 1600px;      
   margin: 0 auto;
+  width: 90%;
 }
 
 .about-title {
@@ -187,4 +189,820 @@ body {
   grid-row: 4 / span 3;
   filter: brightness(80%);
 }
+
+/* услуги*/
+.services-section {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.services-title {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  color: #142C12;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.services-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26.27px;
+  font-weight: 400;
+  color: #142C12;
+  text-align: center;
+  max-width: 1095px;
+  margin-bottom: 45px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 78px;
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.service-img-wrapper {
+  width: 100%;
+  aspect-ratio: 3.7 / 4;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 5px solid #777C5C;
+  overflow: hidden;
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 60% 90%;
+  filter: brightness(85%);
+
+}
+
+.service-item-title {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #142C12;
+  margin-bottom: 16px;
+}
+
+.service-item-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #142C12;
+}
+
+.services-cta {
+  margin-top: 20px;
+}
+
+.btn-services-book {
+  font-family: 'Tenor Sans', sans-serif;
+  background-color: #777C5C;
+  color: #EFE6D7;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 12.7px;
+  border: 1.27px #777C5C;
+  font-size: 27.94px;
+  font-weight: 400;
+  display: inline-block;
+  
+}
+
+/*Медицинский персона*/
+.staff-section {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 73px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.staff-title {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  color: #142C12;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 47px;
+  row-gap: 43px;
+  width: 100%;
+}
+
+.staff-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.staff-img-wrapper {
+  width: 100%;
+  aspect-ratio: 4.1 / 4;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  border: 5px solid #777C5C;
+  overflow: hidden;
+  flex-shrink: 0; 
+}
+
+.staff-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.staff-item-name {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #142C12;
+  margin-bottom: 16px;
+  flex-grow: 1;          
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+.staff-item-role {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color:  #142C12;
+  margin-top: auto;
+}
+
+.staff-info-text {
+  grid-column: 4;
+  grid-row: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.staff-info-text p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  color: #142C12;
+  text-align: left;
+}
+
+/* Номера / Домики*/
+.rooms-section {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 103px;
+  width: 90%;
+}
+
+.rooms-title {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  color: #142C12;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.rooms-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26.27px;
+  font-weight: 400;
+  color: #142C12;
+  text-align: center;
+  max-width: 1170px;
+  margin-bottom: 45px;
+}
+
+.rooms-list {
+  display: flex;
+  flex-direction: column;
+  gap: 45px; 
+  width: 100%;
+}
+
+.room-card {
+  display: flex;
+  background-color: #777C5C; 
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+  max-height: 360px;
+}
+
+
+.room-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.room-img-wrapper {
+  width: 35%;
+  position: relative;
+}
+
+.room-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.room-content {
+  width: 65%;
+  padding: 30px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  color: #EFE6D7; 
+}
+
+.room-card-title {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.room-capacity {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26.27px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.room-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26.27px;
+  font-weight: 400;
+  flex-grow: 1; 
+}
+
+.room-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.room-price {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.btn-room-more {
+  font-family: 'Tenor Sans', sans-serif;
+  background-color: #EFE6D7;
+  color: #777C5C;
+  border: none;
+  padding: 9px 48px;
+  border-radius: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  display: inline-block; /* обязательно, чтобы ссылка вела себя как кнопка */
+  text-decoration: none; /* убирает дефолтное подчеркивание ссылки */
+  text-align: center;
+}
+
+
+/* Бронирование */
+.booking-section {
+  width: 100%;
+  padding: 35px 0;
+  background: url('/bg-booking.png') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking-title {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  color: #142C12;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.booking-card {
+  max-width: 1000px;
+  width: 90%;
+  background-color: #777C5C;
+  border-radius: 10px;
+  padding: 36px 58px;
+}
+
+.booking-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26.27px;
+  font-weight: 400;
+  color: #EFE6D7;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-group {
+  position: relative;
+  width: 100%;
+}
+
+.form-input {
+  width: 100%;
+  background: transparent;
+  border: 1.27px solid #EFE6D7;
+  border-radius: 12.7px;
+  padding: 18px 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25.37px;
+  color: #EFE6D7;
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.form-input::placeholder {
+  color: #EFE6D7;
+}
+
+.form-textarea {
+  min-height: 140px;
+  resize: none;
+}
+
+
+.form-select {
+  appearance: none;
+  background-image: url("/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  background-size: 27px;
+  cursor: pointer;
+  padding-right: 45px;
+}
+
+.form-select.select-placeholder {
+  color: #EFE6D7;
+}
+
+.form-select option {
+  background-color: #777C5C;
+  color: #EFE6D7;
+}
+
+.date-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.date-input {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  padding-right: 45px;
+}
+
+.date-input:not(.has-value)::-webkit-datetime-edit {
+  color: transparent !important;
+  opacity: 0;
+}
+
+.date-placeholder {
+  position: absolute;
+  left: 18px;
+  z-index: 1;
+  color: #EFE6D7;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25.37px;
+  pointer-events: none;
+}
+
+.date-input.has-value + .date-placeholder {
+  display: none;
+}
+
+.date-input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: 18px;
+  width: 27px;
+  background-image: url("/icon-calendar.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: contain !important;
+  cursor: pointer;
+  opacity: 1;
+  z-index: 3;
+}
+
+.form-agreement {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14.46px;
+  color: #EFE6D7;
+}
+
+.policy-link {
+  color: #EFE6D7;
+}
+
+.form-submit-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn-submit-booking {
+  font-family: 'Tenor Sans', sans-serif;
+  background-color: #EFE6D7;
+  color: #777C5C;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 10px;
+  font-size: 24.16px;
+  cursor: pointer;
+  outline: none !important;
+}
+
+/* FAQ */
+.faq-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 100px;
+  
+}
+
+.faq-title {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  color: #142C12;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.faq-container {
+  max-width: 1450px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.faq-item {
+  width: 100%;
+  border: 2.7px solid #142C12;
+  border-radius: 12.7px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 25px 51px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.question-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 33.84px;
+  font-weight: 400;
+  color: #142C12;
+}
+
+.faq-icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.faq-icon::before,
+.faq-icon::after {
+  content: '';
+  position: absolute;
+  background-color: #142C12;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.faq-icon::before {
+  width: 30px;
+  height: 4px;
+}
+
+.faq-icon::after {
+  width: 4px;
+  height: 30px;
+}
+
+.faq-item.is-open .faq-icon::after {
+  transform: scaleY(0);
+}
+
+.faq-answer {
+  overflow: hidden;
+}
+
+.faq-answer-content {
+  padding: 0 30px 22px 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #59654f;
+}
+
+/* Адаптивность для планшетов и телефонов
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  .faq-question {
+    padding: 16px 20px;
+  }
+  .question-text {
+    font-size: 16px;
+    padding-right: 15px;
+  }
+  .faq-answer-content {
+    padding: 0 20px 16px 20px;
+    font-size: 14px;
+  }
+} */
+
+/* ФУТЕР*/
+
+.site-footer {
+  width: 100%;
+  background-color: #EFE6D7; /* Нежный кремовый фон с макета */
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  max-width: 1600px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Левая колонка - Меню */
+.footer-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Расстояние между пунктами меню */
+}
+
+.footer-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #142C12; /* Фирменный зеленый цвет текста */
+  text-decoration: none;
+}
+
+/* Правая колонка - Контакты */
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Выравнивание всего блока по правому краю */
+  text-align: right;
+  gap: 30px;
+}
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-item {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #142C12;
+  text-decoration: none;
+}
+
+/* Блок иконок соцсетей */
+.footer-socials {
+  display: flex;
+  gap: 15px; /* Промежуток между круглыми иконками */
+  align-items: center;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 40px;
+}
+
+.social-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Адаптивность для мобильных экранов */
+/* @media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+  
+  .footer-contacts {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-menu {
+    align-items: center;
+  }
+} */
+
+/* ==========================================================================
+   СТРАНИЦА ДЕТАЛЬНОЙ ИНФОРМАЦИИ О НОМЕРЕ (ПО ШАБЛОНУ)
+   ========================================================================== */
+
+.room-detail-page {
+  background-color: #EFE6D7; /* Светлый бежевый фон всей страницы */
+  min-height: 100vh;
+}
+
+.loading-state {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding: 100px 0;
+  color: #142C12;
+}
+
+.room-main-content {
+  width: 100%;
+  padding: 40px 0 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.room-container {
+  max-width: 1100px;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr; /* Две колонки: левая чуть шире */
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* Левая колонка - Галерея картинок */
+.room-gallery-block {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.main-image-container {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.main-room-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumbnails-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 миниатюры в ряд */
+  gap: 15px;
+}
+
+.thumb-box {
+  aspect-ratio: 1 / 1;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.thumb-box:hover {
+  opacity: 0.8;
+}
+
+.thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Правая колонка - Описание */
+.room-info-block {
+  font-family: 'Montserrat', sans-serif;
+  color: #142C12;
+}
+
+.room-detail-title {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.room-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.room-full-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  text-align: justify;
+}
+
+.room-price-box {
+  margin-top: 20px;
+}
+
+.price-value {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  border-bottom: 2px solid #142C12;
+  padding-bottom: 5px;
+}
+
+/* Мобильная адаптация страницы номера */
+/* @media (max-width: 868px) {
+  .room-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .room-detail-title {
+    font-size: 32px;
+  }
+}
+ */
 
