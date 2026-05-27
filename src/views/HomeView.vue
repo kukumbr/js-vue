@@ -1,6 +1,6 @@
 <template>
   <div class="site-wrapper">
-    <!-- Секция 1: Главный экран (Hero) -->
+    
     <section id="hero" class="hero-section">
       <TheHeader />
       <div class="hero-content">

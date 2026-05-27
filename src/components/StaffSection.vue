@@ -5,17 +5,20 @@
 
     <div class="staff-grid">
       
-      <div 
+      <!-- Обернули блок в router-link и добавили динамический путь :to -->
+      <router-link 
         v-for="employee in staffList" 
         :key="employee.id" 
+        :to="'/doctor/' + employee.id"
         class="staff-item"
+        tag="div"
       >
         <div class="staff-img-wrapper">
           <img :src="employee.image" :alt="employee.name" class="staff-image" />
         </div>
         <h3 class="staff-item-name">{{ employee.name }}</h3>
         <p class="staff-item-role">{{ employee.role }}</p>
-      </div>
+      </router-link>
 
       <div class="staff-info-text">
         <p>
@@ -30,10 +33,10 @@
   </section>
 </template>
 
+
 <script setup>
 import { ref } from 'vue'
 
-// Этот массив карточек в будущем полностью заменится на данные из вашего API
 const staffList = ref([
   {
     id: 1,

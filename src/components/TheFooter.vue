@@ -1,8 +1,7 @@
 <template>
-  <footer class="site-footer">
+  <footer id="footer" class="site-footer">
     <div class="footer-container">
       
-      <!-- Левая колонка: Навигация с поддержкой переходов и скролла -->
       <nav class="footer-nav">
         <ul class="footer-menu">
           <li><router-link :to="{ path: '/', hash: '#about' }" class="footer-link">О нас</router-link></li>
@@ -14,7 +13,6 @@
         </ul>
       </nav>
 
-      <!-- Правая колонка: Контакты и соцсети -->
       <div class="footer-contacts">
         <div class="contacts-info">
           <a href="tel:+77777777777" class="contact-item phone-link">+7 (777) 777-77-77</a>
@@ -25,7 +23,6 @@
           </p>
         </div>
 
-        <!-- Иконки соцсетей с вашими системными именами -->
         <div class="footer-socials">
           <a href="#" target="_blank" class="social-icon">
             <img src="/icon-telegram.svg" alt="Telegram" />
@@ -33,7 +30,6 @@
           <a href="#" target="_blank" class="social-icon">
             <img src="/icon-vk.svg" alt="VK" />
           </a>
-          <!-- Если добавите иконку WhatsApp в public, она сразу заработает -->
           <a href="#" target="_blank" class="social-icon">
             <img src="/icon-whatsapp.svg" alt="WhatsApp" />
           </a>
@@ -45,5 +41,5 @@
 </template>
 
 <script setup>
-// Чисто презентационный компонент
+
 </script>

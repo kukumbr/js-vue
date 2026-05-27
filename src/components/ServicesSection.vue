@@ -1,6 +1,6 @@
 <template>
   <section id="services" class="services-section">
-    
+
     <h2 class="services-title">Услуги</h2>
     <p class="services-subtitle">
       Санаторий "Чистый Воздух" предлагает широкий спектр услуг, направленных<br>
@@ -33,7 +33,6 @@
 <script setup>
 import { ref } from 'vue'
 
-// В скрипте остался только массив карточек для будущего подключения к API
 const servicesList = ref([
   {
     id: 1,

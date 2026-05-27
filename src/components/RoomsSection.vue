@@ -1,24 +1,21 @@
 <template>
   <section id="rooms" class="rooms-section">
-    <!-- Статический заголовок и описание блока -->
     <h2 class="rooms-title">Номера/Домики</h2>
     <p class="rooms-subtitle">
       Санаторий "Чистый Воздух" предлагает разнообразное жилье: уютные стандартные номера, полулюксы и люксы для пар и семей, а также комфортабельные домики для уединенного отдыха. Семейные домики подходят для больших компаний, а эко-домики создают атмосферу близости к природе. Каждый номер оборудован всем необходимым для комфортного отдыха.
     </p>
 
-    <!-- Список номеров, готовый под API -->
     <div class="rooms-list">
       <div 
         v-for="room in roomsList" 
         :key="room.id" 
         class="room-card"
       >
-        <!-- Блок с картинкой -->
+
         <div class="room-img-wrapper">
           <img :src="room.image" :alt="room.title" class="room-image" />
         </div>
 
-        <!-- Блок с контентом -->
         <div class="room-content">
           <h3 class="room-card-title">{{ room.title }}</h3>
           <p class="room-capacity">Вместимость: {{ room.capacity }}</p>
